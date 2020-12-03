@@ -8,8 +8,8 @@ public class gameMenuGUI extends gameMenuInteraction{
     private JLabel label = new JLabel();
 
     public gameMenuGUI(){ //BUTTONS THAT HAVE ACTIONS LISTENERS
-        label.setIcon(new ImageIcon("bitwallpaper.png"));
-        gameMenuGUIPanel.add(label);
+        //label.setIcon(new ImageIcon("bitwallpaper.png"));
+        //gameMenuGUIPanel.add(label);
         instructionButton.addActionListener(e -> setGameMode("INSTRUCTIONS"));      //buttons with action listener
         easyButton.addActionListener(e -> setGameMode("EASY"));                   //when button is pressed
         mediumButton.addActionListener(e -> setGameMode("MEDIUM"));               //it passes a String value
@@ -19,7 +19,7 @@ public class gameMenuGUI extends gameMenuInteraction{
 
     public void displaygameMenuGUI(){                                                    //frame is created
         JFrame frame = new JFrame("Game Menu");
-        frame.add(label);
+        //frame.add(label);
         frame.setResizable(true);
         frame.setContentPane(new Menu.gameMenuGUI().gameMenuGUIPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
