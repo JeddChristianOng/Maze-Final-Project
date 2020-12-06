@@ -39,9 +39,6 @@ class mazeMapGenerator extends JPanel implements ActionListener, EventListener, 
                 }g1.fill(rect=new Rectangle(80 * col, 80 * row, 80, 80));}}  //SETS THE COLOR OF RECT AND DRAWS IT
         g2.setColor(Color.BLUE);
         g2.fill(circle = new Rectangle2D.Double(x, y, 40, 40));
-
-
-
     } //THIS IS THE PLAYER OBJECT THAT IS DISPLAYED.
 
     public void actionPerformed(ActionEvent e){ //METHOD IS ACCESSED WHEN A KEY IS PRESSED
@@ -67,7 +64,6 @@ class mazeMapGenerator extends JPanel implements ActionListener, EventListener, 
     private void right(){ velx = 1; vely = 0;}
 
     void checkMazeConditions(){
-
         //check current position
         //if player object color touches the color of the wall
         //reset to the start position
