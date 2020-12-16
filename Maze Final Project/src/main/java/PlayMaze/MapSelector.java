@@ -1,9 +1,14 @@
 package PlayMaze;
 
+//FUNCTION OF CLASS
+//STORES VALUE WHEN USER SELECTS A MAZE MODE
+//THIS CLASS CAN BE USED TO GET THE NEXT MAP
 public class MapSelector implements MazeMaps{
     public static int[][] selectedMAP;
     int counter = 0;
+    String SelectedMap;
     public void setMAP(String level){
+        SelectedMap = level;
         if(counter == 3){counter = 0;}
         if(counter < 3){
             switch(level){

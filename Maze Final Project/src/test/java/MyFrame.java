@@ -1,4 +1,5 @@
-import javax.swing.*;
+
+/*import javax.swing.*;
 import java.awt.*;
 
 public class MyFrame extends javax.swing.JFrame{
@@ -72,3 +73,5 @@ public class MyFrame extends javax.swing.JFrame{
         });
     }
 }
+
+ */
